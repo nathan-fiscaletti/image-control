@@ -13,7 +13,6 @@ class ImageControl
                 $img = imagecreatefromstring(file_get_contents($_GET['image']));
             } catch (\Exception $e) {
                 $img = null;
-                return;
             }
         }
 
@@ -37,7 +36,7 @@ class ImageControl
             $image = imagecreatefromstring(file_get_contents('./res/unknown.png'));
         }
 
-        if ($width === null || $height === null) {
+        if ($width !== null || $height !== null) {
             $image = imagescale($image, $width, $height);
         }
 
