@@ -27,7 +27,27 @@
         $url = 'http://image-control.online/image.php?image='.$_POST['image'].'&width='.$_POST['width'].'&height='.$_POST['height'];
 
         ?>
-            <img src='<?php echo $url; ?>' />
+            <br /><br />
+            <h2>Result</h2>
+
+            <table>
+                <tr>
+                    <td>
+                        <b>URL: </b>
+                    </td>
+                    <td>
+                        <a href='<?php echo $url; ?>'><?php echo $url; ?></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Preview: </b>
+                    </td>
+                    <td>
+                        <img src='<?php echo $url; ?>' />
+                    </td>
+                </tr>
+            </table>
         <?php
     }
     ?>
@@ -35,3 +55,4 @@
 
 </html>
 
+http://image-control.online/image.php?image=http%3A%2F%2Fsignature.rocketleaguestats.com%2Fnormal%2Fsteam%2F76561198017708432.png&width=500&height=130
