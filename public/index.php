@@ -58,6 +58,10 @@
                             <?php
                         }
                     ?>
+                    <hr />
+                    <div align='center'>
+                        <iframe id="ghcard-nathan-fiscaletti-1" frameborder="0" scrolling="0" allowtransparency="true" src="https://cdn.jsdelivr.net/github-cards/latest/cards/default.html?user=nathan-fiscaletti&amp;identity=ghcard-nathan-fiscaletti-1" width="400" height="150"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
