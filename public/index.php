@@ -60,7 +60,10 @@
                     ?>
                     <hr />
                     <div align='center'>
-                        <iframe id="ghcard-nathan-fiscaletti-1" frameborder="0" scrolling="0" allowtransparency="true" src="https://cdn.jsdelivr.net/github-cards/latest/cards/default.html?user=nathan-fiscaletti&amp;identity=ghcard-nathan-fiscaletti-1" width="400" height="150"></iframe>
+                        <!-- Place this tag where you want the button to render. -->
+                        <a class="github-button" href="https://github.com/nathan-fiscaletti" aria-label="Follow @nathan-fiscaletti on GitHub">Follow @nathan-fiscaletti</a>
+                        <br /><br />
+                        <p style='font-size: 12px;font-style: italic;'>© 2018 Nathan Fiscaletti</p>
                     </div>
                 </div>
             </div>
