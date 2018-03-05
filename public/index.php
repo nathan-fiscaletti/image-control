@@ -27,10 +27,12 @@
         $url = 'http://image-control.online/image.php?image='.$_POST['image'].'&width='.$_POST['width'].'&height='.$_POST['height'];
 
         ?>
-            <img src='<? $url ?>' />
+            <img src='<?php echo $url; ?>' />
         <?php
     }
     ?>
 
 
 </html>
+
+http://image-control.online/image.php?image=http%3A%2F%2Fsignature.rocketleaguestats.com%2Fnormal%2Fsteam%2F76561198017708432.png&width=500&height=130
