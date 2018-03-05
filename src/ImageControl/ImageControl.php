@@ -6,18 +6,15 @@ class ImageControl
 {
     public function load()
     {
-        if (empty($_GET['image'])) {
-            $this->displayImage(null);
-            return;
-        }
-
         $img = null;
 
-        try {
-            $img = imagecreatefromstring(file_get_contents($_GET['image']));
-        } catch (\Exception $e) {
-            $img = null;
-            return;
+        if (! empty($_GET['image'])) {
+            try {
+                $img = imagecreatefromstring(file_get_contents($_GET['image']));
+            } catch (\Exception $e) {
+                $img = null;
+                return;
+            }
         }
 
         $width = null;
