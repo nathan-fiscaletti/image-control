@@ -41,7 +41,7 @@ class ImageControl
         }
 
         if ($width === null || $height === null) {
-            $image = imagescale($image, $width, $height)
+            $image = imagescale($image, $width, $height);
         }
 
         header('Content-Type: image/png');
