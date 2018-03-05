@@ -50,7 +50,7 @@
                     </form>
                     <?php 
                         if (isset($_POST['generate'])) { 
-                            $url = 'http://image-control.online/image.php?image='.$_POST['image'].'&width='.$_POST['width'].'&height='.$_POST['height'];
+                            $url = 'http://image-control.online/image.php?image='.urlencode($_POST['image']).'&width='.urlencode($_POST['width']).'&height='.urlencode($_POST['height']);
                             ?>
                                 <hr />
                                 <div class="row">
