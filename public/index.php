@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <h1>Image Control by <a href='https://github.com/nathan-fiscaletti' style='color: black;'>Fisc</a></h1>
+                    <h1>Image Control</h1>
                     <hr />
                     <h3>Generate Re-Size Image URL</h3> 
                     <p> Enter an Image URL and a desired width and height and we will generate a re-size wrapper URL for the image. </p>
