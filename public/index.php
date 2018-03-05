@@ -13,7 +13,7 @@
         <script async defer src="https://buttons.github.io/buttons.js"></script>
     </head>
     <body >
-        <a href="https://github.com/nathan-fiscaletti/image-control"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+        <a href="https://github.com/nathan-fiscaletti/image-control"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 2147483647;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
