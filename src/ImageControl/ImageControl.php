@@ -10,7 +10,7 @@ class ImageControl
 
         if (! empty($_GET['image'])) {
             try {
-                $img = imagecreatefromstring(file_get_contents($_GET['image']));
+                $img = imagecreatefromstring(file_get_contents(urldecode($_GET['image'])));
             } catch (\Exception $e) {
                 $img = null;
             }
