@@ -1,62 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Image Control by -DI- MrFisc</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Image Control - Resize URL Wrapper Generator</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
     </head>
-    <body>
-        <h1>Image Control</h1>
-        <br />
-
-        <h2>Resize Image URL</h2>
-        <form action='./' method='POST'>
-            <input type='hidden' name='generate' value='1' />
-            <table>
-                <tr>
-                    <td style='width: 100px'>Image URL:</td>
-                    <td><input type='text' name='image' style='width:300px' /></td>
-                </tr>
-                <tr>
-                    <td>Width:</td>
-                    <td><input type='number' name='width' /> <b>px</b></td>
-                </tr>
-                <tr>
-                    <td>Height:</td>
-                    <td><input type='number' name='height' /> <b>px</b></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type='submit' value='Create URL for resized image' /></td>
-                </tr>
-            </table>
-        </form>
-
-        <?php 
-        if (isset($_POST['generate'])) { 
-            $url = 'http://image-control.online/image.php?image='.$_POST['image'].'&width='.$_POST['width'].'&height='.$_POST['height'];
-
-            ?>
-                <h2>Result</h2>
-
-                <table>
-                    <tr>
-                        <td>
-                            <b>URL: </b>
-                        </td>
-                        <td>
-                            <a href='<?php echo $url; ?>'><?php echo $url; ?></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign='top'>
-                            <b>Preview: </b>
-                        </td>
-                        <td>
-                            <img src='<?php echo $url; ?>' />
-                        </td>
-                    </tr>
-                </table>
-            <?php
-        }
-        ?>
+    <body >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1>Image Control by -DI- MrFisc</h1>
+                    <hr />
+                    <h3>Generate Re-Size Image URL</h3> 
+                    <p> Enter an Image URL and a desired width and height and we will generate a re-size wrapper URL for the image. </p>
+                    <form method="post" action="./">
+                        <input type='hidden' name='generate' value='1' />
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="image"> Image URL</label>
+                                <input type="text" class="form-control" name="image" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="width"> Width</label>
+                                <input type="number" class="form-control" name="width" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="height"> Height</label>
+                                <input type="number" class="form-control" name="height" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <input type='submit' value='Generate Re-Size URL!' class="btn btn-lg btn-success btn-block" />
+                            </div>
+                        </div>
+                    </form>
+                    <?php 
+                        if (isset($_POST['generate'])) { 
+                            $url = 'http://image-control.online/image.php?image='.$_POST['image'].'&width='.$_POST['width'].'&height='.$_POST['height'];
+                            ?>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-12 form-group">
+                                        <label> Generated URL</label>
+                                        <textarea class='form-control'><?php echo $url; ?></textarea>
+                                    </div>
+                                </div>
+                            <?php
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
-
