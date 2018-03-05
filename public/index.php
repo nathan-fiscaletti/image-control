@@ -1,4 +1,7 @@
 <html>
+    <h1>Image Control</h1>
+    <br />
+
     <h2>Resize Image URL</h2>
     <form action='./' method='POST'>
         <input type='hidden' name='generate' value='1' />
@@ -27,7 +30,6 @@
         $url = 'http://image-control.online/image.php?image='.$_POST['image'].'&width='.$_POST['width'].'&height='.$_POST['height'];
 
         ?>
-            <br /><br />
             <h2>Result</h2>
 
             <table>
