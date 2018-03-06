@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="description" content="A utility used to generate re-size URL wrappers for image URLs quickly and easily. These URL wrappers will always redirect back to the original image, however they will modify certain properties of the base image.">
+        <meta name="description" content="A utility used to generate re-size URL wrappers for image URLs quickly and easily. These URL wrappers will always redirect back to the original image, however they will modify certain properties, including width and height, of the base image.">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Image Control - Image Resize URL Wrapper Generator</title>
+        <title>Image Control - Image Re-Size URL Wrapper Generator</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
         <!-- Optional theme -->
