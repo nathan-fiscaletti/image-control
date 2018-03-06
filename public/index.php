@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="description" content="A utility used to generate re-size URL wrappers for image URLs.">
+        <meta name="description" content="A utility used to generate re-size URL wrappers for image URLs quickly and easily. These URL wrappers will always redirect back to the original image, however they will modify certain properties of the base image.">
         <meta name="keywords" content="Image,Resize,Online,by,URL,Image,Control,Re-Size,PNG,JPG,BMP,Simple,Wrapper">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
